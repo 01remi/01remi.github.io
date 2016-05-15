@@ -1,13 +1,300 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>01remi</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Obiaremmy.me</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+<style type="text/css">s 
+  #news-ticker { 
+    font-weight: bold;
+    display: block;
+    font-family: monospace;
+    font-size: 15px;
+    padding: 0;
+    margin: 0
+}
+
+#news-ticker .ticker-title {
+    display: inline-block;
+    margin-right: 12px;
+}
+
+#news-ticker ul { 
+    display: inline-block;
+    position: relative;
+}
+
+#news-ticker li a {
+    color: #f00;
+    text-decoration: none;
+}
+
+#news-ticker li a:hover {
+    text-decoration: underline;
+    color: #00f;
+}
+
+#news-ticker li {
+    position: absolute;
+    left: 0;
+    width: 0;
+    overflow: hidden;
+    height: 1em;
+    word-wrap: break-word;  
+    opacity: 0
+}
+
+#news-ticker li.tick {
+    -webkit-animation: tick 5s linear;
+    
+}
+
+@-webkit-keyframes tick {
+  0% {
+    width: 0;
+  }
+  5% {
+      opacity: 1;
+  } 
+  90% {
+    width: 550px;
+    opacity: 1;
+  }
+  100% {
+     opacity: 0
+  }
+}
+
+</style>
 </head>
-<body>
-<center>
-	<h1 style="color:green">
-		OBIA REMMY B. N.
-	</h1>
-</center>
-</body>
+<body id="main">
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container;news-ticker;ticker-title" href="#" class="brand-logo">
+ <b>Obia.</b><b style="color:green">remmy</b>
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#Publications">Publications</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#Publications">Publications</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container" style="height:630px;background-image: url(image1.png);background-repeat: no-repeat;background-size: 100% 100%;">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <!--<h1 class="header center teal-text text-lighten-2">Parallax Template</h1> background-color: rgba(0,0,0,0.9);-->
+       <div class="row center">
+          <h5 class="header col s12 light" style="margin-top: 6%;margin-left: -25%">
+            
+
+                        <!-- Stolen from http://jsfiddle.net/3smGz/3/ -->
+<div id="news-ticker" style="height: 30%;width:100%">
+    <div class="ticker-title"></div>
+    <ul>
+        <li>
+            <a href="#" style="color:black;font-size: 110%"><b>Welcome to my website.</b></a>
+        </li>
+        <li>
+            <a href="#" style="color:black;font-size: 110%"><b>I am Obia Remmy B. N.</b></a>
+        </li>
+        <li>
+            <a href="#" style="color:black;font-size: 110%"><b>Network Engineering Student.</b></a>
+        </li>
+        <li>
+            <a href="#" style="color:black;font-size: 110%"><b>University of Buea,Cameroon.</b></a>
+        </li>
+    </ul>
+</div>
+
+          </h5>
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax" style="margin-top: -2%;">
+   <img src="people.gif" style="" alt="image">
+    </div>
+  </div>
+
+  <div class="container" id="About">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">settings_bluetooth</i><i class="material-icons">settings_input_antenna</i></h2>
+            <h5 class="center">Networks</h5>
+
+            <p class="light">My passion for antennas have pushed me into networks.I am currently studying network engineering at the University of Buea,Cameroon.I love connecting devices together. </p>
+          </div>
+        </div>
+
+        <div class="col s12 m6">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">schedule</i></h2>
+            <h5 class="center">Hobby</h5>
+
+            <p class="light">During my free time, I enjoy writing code for computers, listening to music or watching a movie.I familiar with javascript, JSF,PHP and others.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+    <div class="container" id="Projects">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="icon-block">
+                    <div id="news-ticker" style="height: 30%;width:100%">
+                      <div class="ticker-title"></div>
+                      <ul>
+                          <li>
+                              <a href="#" style="color:blue;font-size: 110%">Sorry!! No Projects submitted here yet.</a>
+                          </li>
+                      </ul>
+                  </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container" id="Publications">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="icon-block">
+                    <div id="news-ticker" style="height: 30%;width:100%">
+                      <div class="ticker-title"></div>
+                      <ul>
+                          <li>
+                              <a href="#" style="color:red;font-size: 110%">Sorry!! No Projects submitted here yet.</a>
+                          </li>
+                      </ul>
+                  </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container" id="Contact">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h5 style="color:black">Telephone <i class="material-icons">phone</i></h5>
+            <hr/ style="width:80%;margin-left: -2%">
+            <p class="light" style="color:black">
+           Phone: +237 672072724 <br/>
+            </p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h5 style="color:black">Connect <i class="material-icons">language</i></h5>
+            <hr/ style="width:80%;margin-left: -2%">
+            <p class="light" style="color:black">
+           Website: <a href="http://www.skylabase.com/about">www.skylabase.com/about</a> <br/>
+           Email : remyobia@gmail.com <br/>
+            </p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h5 style="color:black">Social<i class="material-icons">lsupervisor_account</i></h5>
+            <hr/ style="width:80%;margin-left: -2%">
+            <p class="light" style="color:black">
+            <a href="https://www.facebook.com/people/Obia-Remmy/100011194419870"> www.facebook.com/Obia.Remmy</a><br/>
+            <a href="https://plus.google.com/111359554429390587081/posts">plus.google.com/Obia.Remmy</a><br/>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+ <div class="fixed-action-btn horizontal" style="bottom: 45px; right: 24px;">
+    <a class="btn-floating btn-large blue" href="#main">
+      <i class="large material-icons">navigation</i>
+    </a>
+ </div>   
+  <footer class="page-footer white">
+    <div class="footer-copyright">
+      <div class="container" style="color:black;font-weight: 30%">
+     <b> Developed by <a class="brown-text text-lighten-3" href="http://skylabase.com"><b>Obia.</b><b style="color: green">Remmy</b></a></b>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+<script type="text/javascript">
+$(function () {
+    var $ticker = $('#news-ticker'),
+      $first = $('li:first-child', $ticker);
+    
+    // put an empty space between each letter so we can 
+    // use break word
+    $('a', $ticker).each(function () {
+        var $this = $(this),
+          text = $this.text();
+       $this.html(text.split('').join('&#8203;'));
+    });
+    
+    // begin the animation
+    function tick($el) {
+        $el.addClass('tick')
+          .on('webkitAnimationEnd oanimationend msAnimationEnd animationend', function () {
+              
+            $el.removeClass('tick');
+              var $next = $el.next('li');
+              $next = $next.length > 0 ? $next : $first;
+            tick($next);
+        });
+    }
+        
+    tick($first);
+    
+});
+</script>
+  </body>
 </html>
